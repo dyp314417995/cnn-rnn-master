@@ -11,6 +11,7 @@ import os
 def _read_file(filename):
     """读取一个文件并转换为一行"""
     with open(filename, 'r', encoding='utf-8') as f:
+
         return f.read().replace('\n', '').replace('\t', '').replace('\u3000', '')
 
 
